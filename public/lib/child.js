@@ -15,7 +15,9 @@ export default class Child extends React.Component {
       <div>
         Child Component
         <input ref='input' />
-        <button onClick={this.handleClick}>Click to display greeting</button>
+        <button onClick={this.handleClick}>
+          Click to display greeting
+        </button>
       </div>
     )
   }

@@ -4,11 +4,15 @@ import Child from './child'
 export default class Parent extends React.Component {
   constructor(props) {
     super(props)
-    this.handleClick = this.handleClick.bind(this)
+    this.state = {
+      message: ''
+    }
 
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(greeting) {
+    this.setState({message: greeting})
     alert(`Greeting is: ${greeting}`)
   }
 
@@ -19,6 +23,7 @@ export default class Parent extends React.Component {
         <Child
           sayHello={this.handleClick}
         />
+        {this.state.message}
       </div>
     )
   }
