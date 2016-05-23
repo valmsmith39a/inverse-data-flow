@@ -9,7 +9,7 @@ export default class Parent extends React.Component {
   }
 
   handleClick() {
-    console.log('hello from parent!')
+    alert('Live long and prosper!')
   }
 
   render() {
