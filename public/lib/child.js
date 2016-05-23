@@ -8,6 +8,7 @@ export default class Child extends React.Component {
 
   handleClick() {
     console.log('in handle click ')
+    this.props.sayHello()
   }
 
   render() {
