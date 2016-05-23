@@ -8,8 +8,8 @@ export default class Parent extends React.Component {
 
   }
 
-  handleClick() {
-    alert('Live long and prosper!')
+  handleClick(greeting) {
+    alert(`Greeting is: ${greeting}`)
   }
 
   render() {
